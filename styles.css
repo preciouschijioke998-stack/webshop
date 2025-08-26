@@ -1,0 +1,74 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.bg-white{
+    background: white;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.header{
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title{
+    color:blue
+}
+
+.nav-link a{
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.content{
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome-div{
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    
+}
+
+.desc{
+    word-wrap:break-word;
+    text-align: left;
+}
+
+.product-div{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    
+
+}
+.product{
+    width: 25%;
+    padding: 10px;
+}
+
+.img-div{
+    background-color: rgb(220, 222, 223);
+    border-radius: 10px;
+    height: 100%;
+}
+
+img{
+    margin: auto;
+    object-fit: contain;
+}
+
+.shnw{
+    margin-top: 50px;
+}
+button{
+    background-color: blue;
+    border-radius: 8px;
+    color: white;
+}
