@@ -3,15 +3,13 @@ body{
 }
 .bg-white{
     background: white;
-    height: auto;
+    /* height: auto; */
     padding-bottom: 40px;
 }
 
-.header{
-    padding: 20px 50px;
+nav{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    gap: 50%;
 }
 
 .title{
@@ -64,11 +62,75 @@ img{
     object-fit: contain;
 }
 
-.shnw{
-    margin-top: 50px;
+.remark{
+    word-wrap:break-word;
+    text-align:center;
+    margin-top: 100px;
 }
-button{
+
+.shnw{
+    margin-top: 100px;
+    border-radius:10px;
+}
+.button{
     background-color: blue;
     border-radius: 8px;
     color: white;
+    border: 1px solid blue;
+    padding: 5px;
 }
+
+button:hover{
+    background-color: rgb(106, 106, 212) !important ;
+}
+
+.png{
+   width:50px;
+   height: auto;
+   margin-top: 50px;
+}
+
+.imgs{
+    text-align: center;
+}
+
+
+.modal-1{
+    background: rgb(240, 237, 237);
+    max-width: 300px ;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+   
+}
+
+.display{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.visible{
+    display:none;
+}
+
+.indicate{
+    display: block;
+}
+
+.message{
+    background: rgb(240, 237, 237);
+    max-width: 300px ;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+

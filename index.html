@@ -1,69 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web shop</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
+
 <body>
     <div class="bg-white">
-    <header class="header">
-      <h5 class="title">WEBSHOP PAGE</h5>
-      <div class="nav-link">
-         <a href="#">Home</a> 
-         <a href="#">About</a>
-         <a href="#">Contact</a>
-         </div>
-    </header>
-    <div class="content">
-        <div class="welcome-div">
-            
-            <h4>Welcome To Our Store</h4>
-            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, Ut enim ad minim veniam,quis nostrud exercitation ullam,magnum mus atrocanite quatum. </p>
-        </div>
-     
-        <div class="product-div">
-            <div class=" product">
-                <div class="img-div">
-                    <img src="images/All stars.png" alt="sneakers">
-                </div>
-                <div class="product-title">Sneakers</div>
-                <div class="price">£1000</div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex p-4">
+            <a class="navbar-brand" href="#">WEBSHOP PAGE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cart (<span id="cart">0</span>)</a>
+                    </li>
+                    
+                </ul>
             </div>
-            <div class=" product">
-                <div class="img-div">
-                    <img src="images/polos.png" alt="Polo">
-                </div>
-                <div class="product-title">Polo</div>
-                <div class="price">£1000</div>
-            </div>
-            <div class=" product">
-                <div class="img-div">
+        </nav>
+        <div class="content">
+            <div class="welcome-div">
 
-                    <img src="images/backy.png" alt="Bag">
-                </div>
-                <div class="product-title">Back Pack</div>
-                <div class="price">£1000</div>
+                <h4>Welcome To Our Store</h4>
+                <p class="desc">Discover quality,style and convience all in one place. From top-rated products to
+                    unbeatable deals,we bring you the best shopping experience online. </p>
             </div>
-            <div class=" product">
-                <div class="img-div">
 
-                    <img src="images/iphones.png" alt="phone">
+            <div class="product-div">
+                <div class="product">
+                    <div class="img-div">
+                        <img src="images/All stars.png" alt="sneakers">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <div class="">
+                            <div class="product-title">Sneakers</div>
+                            <div class="price">£1000</div>
+                        </div>
+                        <button class="rounded-2 p-1 bg-primary text-light border-0" onclick="addToCart()">Add to
+                            cart</button>
+                    </div>
                 </div>
-                <div class="product-title">Iphone</div>
-                <div class="price">£1000</div>
+                <div class=" product">
+                    <div class="img-div">
+                        <img src="images/polos.png" alt="Polo">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <div class="">
+                            <div class="product-title">Polo</div>
+                            <div class="price">£1000</div>
+                        </div>
+                        <button class="rounded-2 p-1 bg-primary text-light border-0" onclick="addToCart()">Add to
+                            cart</button>
+                    </div>
+                </div>
+                <div class=" product">
+                    <div class="img-div">
+                        <img src="images/backy.png" alt="Bag">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <div class="">
+                            <div class="product-title">Back Pack</div>
+                            <div class="price">£1000</div>
+                        </div>
+                        <button class="rounded-2 p-1 bg-primary text-light border-0" onclick="addToCart()">Add to
+                            cart</button>
+                    </div>
+                </div>
+                <div class=" product">
+                    <div class="img-div">
+                        <img src="images/iphones.png" alt="phone">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <div class="">
+                            <div class="product-title">Iphone</div>
+                            <div class="price">£1000</div>
+                        </div>
+                        <button class="rounded-2 p-1 bg-primary text-light border-0" onclick="addToCart()">Add to
+                            cart</button>
+                    </div>
+                </div>
+
             </div>
-        </div>
-        <div class="shnw">
-             <button>Shop Now</button>
+            <div class="remark">
+                <h4>Your Style, Your shop!</h4>
+                <p>Find something you love today,great deals and quality items just a click away</p>
+            </div> 
+            <div class="shnw">
+                <button class="button" onclick="openmodal()">Shop Now</button>
+                
+            </div>
+
+
 
         </div>
-         
-            
-        
+
+        <div class="internet">
+            <div class="imgs">
+                <img src="images/fb.png" alt="facebook" class="png">
+                <img src="images/twi.png" alt="twitter" class="png">
+                <img src="images/gu.png" alt="google" class="png">
+                <img src="images/u2b.png" alt="youtube" class="png">
+
+            </div>
+            <p class="Copyright text-center mt-3">© 2025 Webshop. All rights reserved</p>
+        </div>
     </div>
-</div>  
-     
+    <div class="modal-1 display" id="modal">
+        <p class="h5">Submit Details</p>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button class="button bg-dark text-center" onclick="closemodal()">Close Modal</button>
+    </div>
+     <div>
+  <div class="message visible" id="message">
+        <p class="h6">Successfully Added!</p>
+        <div>
+        
+        <button class="button bg-dark text-center" onclick="closemessage()">Close message</button>
+    </div>
+
+
+     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
 </html>
